@@ -13,7 +13,7 @@
 你能获取到的信息：
 
 ```
-
+在bash下获取git当前版本
 ```
 
 ### 2
@@ -27,7 +27,7 @@ caiyi@LAPTOP-I80ETG8J ~> git --version
 你能获取到的信息：
 
 ```
-
+在fish中获取git当前版本
 ```
 
 ### 3
@@ -37,7 +37,7 @@ caiyi@LAPTOP-I80ETG8J ~> git --version
 你能获取到的信息：
 
 ```
-
+在home根目录下操作fish
 ```
 
 ### 4
@@ -47,7 +47,7 @@ caiyi@LAPTOP-I80ETG8J ~> git --version
 你能获取到的信息：
 
 ```
-
+在home根目录下操作zsh
 ```
 
 ### 5
@@ -64,7 +64,7 @@ PS C:\Users\Caiyi Hsu>
 你能获取到的信息：
 
 ```
-
+在Windows环境下当前用户操作powershell
 ```
 
 ### 6
@@ -77,7 +77,7 @@ $ git --version
 你能获取到的信息：
 
 ```
-
+在git bash中获取git当前版本
 ```
 
 ## 编写命令
@@ -130,13 +130,13 @@ $ git --version
 
 ## 填空题
 
-1. 给出一个常用的打印文件内容的命令：____
+1. 给出一个常用的打印文件内容的命令：__cat__
 
-2. 给出一个常用的创建空文件夹的命令：____
+2. 给出一个常用的创建空文件夹的命令：__mkdir__
 
-3. 如果我下载了一个 a.out 没有执行权限，你应该输入什么命令：____
+3. 如果我下载了一个 a.out 没有执行权限，你应该输入什么命令：__chmod +w a.out__
 
-4. 在 Shell 中输出 "Hello, world" 的命令：____
+4. 在 Shell 中输出 "Hello, world" 的命令：__echo "Hello, world"__
 
 ## 简答题
 
@@ -155,8 +155,12 @@ $ git --version
 提示：利用环境变量
 
 ```
-在这里简述你的操作
+先进入.bashrc文件中：vim ~/.bashrc
+按i进入编辑，最后一行插入工具链路径：export PATH="~/riscv-gcc/bin:$PATH"
+Esc退出编辑，:wq保存并退出
+重新加载路径配置：source ~/.bashrc
 ```
+
 
 ## 可选附加作业(自学)
 
@@ -164,9 +168,17 @@ $ git --version
 
 使用 1 行shell命令，在当前文件夹的 a.txt 中写入 "Hello, "
 
+```
+echo "Hello, " > ./a.txt
+```
+
 ### 2
 
 使用 1 行shell命令，在上一题的的 a.txt 中追加 "world!"
+
+```
+echo "world!" >> ./a.txt
+```
 
 ### 3
 
